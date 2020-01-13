@@ -46,7 +46,7 @@ a:hover {
   float: right;
   display: block;
   padding: 20px 12px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   text-decoration: none;
   font-size: 1.1rem;
   font-family: 'Noto Serif SC', serif;
@@ -60,21 +60,8 @@ a:hover {
 .nav .icon {
   display: none;
 }
-.content {
-  padding: 16px;
-}
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
 
 .Intro{
   position: relative;
@@ -97,7 +84,7 @@ a:hover {
 .SectionA {
 background-image: url(2%20-1-min.jpg);  /* pic idea credit to https://dribbble.com/zwartekoffie by Timo Kuilder */ 
 background-size: cover;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
    height: 670px;
@@ -649,6 +636,7 @@ background-image: url(2-2.png);
         font-family: 'Anton', sans-serif;
            font-size: 2.8rem;
          margin-bottom: 280px;
+         display: contents;
     }
 
 .Intro{
@@ -811,20 +799,17 @@ font-family: 'Caveat', cursive;
  
     .nav a:not(:first-child) {
     display: none;  /* hide the rest of nav items */ 
-        transition:all .3s ease;
     }
     
   .nav a.icon {
     float: left;
     display: block;
-      transition:all .3s ease;
   }
 }
 
 @media screen and (max-width: 600px) {
   .nav.responsive {
    position: relative;   /*  */ 
-      transition:all .3s ease;
     }
     
   .nav.responsive .icon {
@@ -836,11 +821,9 @@ font-family: 'Caveat', cursive;
     display: block;
     float: none;
     text-align: center;
-      transition:all .3s ease;
   }
 }
 .title{
     font-family: sans-serif;
     color: #dc2d5e;
-    transition:all .3s ease;
 }
